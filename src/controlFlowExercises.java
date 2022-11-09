@@ -11,11 +11,12 @@ public class controlFlowExercises {
 //            System.out.println(i += 2);
 //        }while (i < 100);
 
-        int i = 105;
-        do {
-            System.out.println(i -= 5);
-        }while(i > -10);
-//
+//        int i = 105;
+//        do {
+//            System.out.println(i -= 5);
+//        }while(i > -10);
+
+//-------QUESTION 3--------
 //        for (int q = 5; q <= 15; q ++) {
 //            System.out.println(q);
 //        }
@@ -24,7 +25,7 @@ public class controlFlowExercises {
 //            System.out.println(i);
 //        }
 
-
+//-------QUESTION 4-------
 //        for (int i = 0; i <= 100; i++) {
 //            if (i % 3 == 0 && i % 5 == 0) {
 //                System.out.println("FizzBuzz " + i);
@@ -34,21 +35,21 @@ public class controlFlowExercises {
 //                System.out.println("Buzz " + i);
 //            }
 //        }
+//------NEXT TO DO--------
+                Scanner scanner = new Scanner(System.in);
 
-//                Scanner scanner = new Scanner(System.in);
-//
-//            System.out.print("Enter a number: ");
-//             int userInput = scanner.nextInt();
-//             for (int i = 0; i <= userInput; i++) {
-//             if (i == 0) {
-//                System.out.println("Here is your table!");
-//                System.out.println("number | squared | cubed");
-//             }else {
-//                 System.out.println(i + "      | " + i*i + "       | " + i*i*i);
-//        }
-//
-//        }
+            System.out.print("Enter a number: ");
+             int userInput = scanner.nextInt();
+             for (int i = 0; i <= userInput; i++) {
+             if (i == 0) {
+                System.out.println("Here is your table!");
+                System.out.println("number | squared | cubed");
+             }else {
+                 System.out.println(i + "      | " + i*i + "       | " + i*i*i);
+        }
 
+        }
+// ------NEXT TO DO-------
 //             Scanner scanner = new Scanner(System.in);
 //
 //            System.out.print("Enter your grade: ");
@@ -62,6 +63,6 @@ public class controlFlowExercises {
 //                } else if (userInput >= 60 && userInput <= 70) {
 //            System.out.println("You got an D " + userInput);
 //             } else {System.out.println("You got an F " + userInput);}
-//
+
     }
 }
