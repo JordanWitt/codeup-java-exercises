@@ -10,6 +10,11 @@ public class controlFlowExercises {
 //        do {
 //            System.out.println(i += 2);
 //        }while (i < 100);
+
+        int i = 105;
+        do {
+            System.out.println(i -= 5);
+        }while(i > -10);
 //
 //        for (int q = 5; q <= 15; q ++) {
 //            System.out.println(q);
@@ -44,19 +49,19 @@ public class controlFlowExercises {
 //
 //        }
 
-             Scanner scanner = new Scanner(System.in);
-
-            System.out.print("Enter your grade: ");
-            int userInput = scanner.nextInt();
-             if (userInput >= 91 & userInput <= 100) {
-            System.out.println("You got an A " + userInput);
-              } else if (userInput >= 81 && userInput <= 90) {
-            System.out.println("You got an B " + userInput);
-              } else if (userInput >= 71 && userInput <= 80) {
-            System.out.println("You got an C " + userInput);
-                } else if (userInput >= 60 && userInput <= 70) {
-            System.out.println("You got an D " + userInput);
-             } else {System.out.println("You got an F " + userInput);}
-
+//             Scanner scanner = new Scanner(System.in);
+//
+//            System.out.print("Enter your grade: ");
+//            int userInput = scanner.nextInt();
+//             if (userInput >= 91 & userInput <= 100) {
+//            System.out.println("You got an A " + userInput);
+//              } else if (userInput >= 81 && userInput <= 90) {
+//            System.out.println("You got an B " + userInput);
+//              } else if (userInput >= 71 && userInput <= 80) {
+//            System.out.println("You got an C " + userInput);
+//                } else if (userInput >= 60 && userInput <= 70) {
+//            System.out.println("You got an D " + userInput);
+//             } else {System.out.println("You got an F " + userInput);}
+//
     }
 }
