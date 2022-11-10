@@ -19,5 +19,15 @@ public class textAdventure {
       int healthPotionHealAmoutn = 30; //heal amount for potions
       int healthPotionDropChance = 50; // 50 percent chance enemy drops a health potion
 
+      boolean running = true;
+
+      System.out.println("Welcome to the Dungeon!");
+
+      GAME:
+      while (running) {
+          System.out.println("----------------------------------------------------------------");
+
+      }
+
     }
 }
