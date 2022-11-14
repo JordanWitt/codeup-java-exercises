@@ -111,8 +111,15 @@ public class textAdventure {
           }
           // what to do when they wish to continue
           if (input.equals("1")){
-              System.out.println();
+              System.out.println("You continue on your adventure!");
+          }
+          else if (input.equals("2")){
+              System.out.println("You exit the dungeon from your adventure, sweet victory");
+              break; // break the loop if they exit
           }
       }
+        System.out.println("#######################");
+        System.out.println("# THANKS FOR PLAYING! #");
+        System.out.println("#######################");
     }
 }
