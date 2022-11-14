@@ -38,7 +38,7 @@ public class textAdventure {
               System.out.println("\n\tWhat would you like to do?");
               System.out.println("\t1 Attack");
               System.out.println("\t2 Drink health potion");
-              System.out.println("\t3 Run!"); //player options
+              System.out.println("\t3 Run!\n"); //player options
 
               //if user input = 1
               String input = in.nextLine(); //grabs next line from console/ user input
