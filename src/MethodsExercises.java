@@ -43,12 +43,35 @@ public class MethodsExercises {
         System.out.println("You entered: " + number);
 
         // question 3
-      System.out.println("Enter an Integer: ");
-      int num = in.nextInt();
-      int factorial = 1;
-      for(int i = 1; i <= num; i++){
-          factorial = factorial*i;
-      }
-      System.out.println("Factorial of the Number: " + factorial);
+        System.out.println("Enter an Integer: ");
+        int num = in.nextInt();
+        int factorial = 1;
+        for (int i = 1; i <= num; i++) {
+            factorial = factorial * i;
+        }
+        System.out.println("Factorial of the Number: " + factorial);
+
+
+        int n;
+        while (true) {
+            try {
+                System.out.println("Enter a number between 1 and 10: ");
+                n = in.nextInt();
+                if (n >= 1 && n <= 10) {
+                    int fact = 1;
+                    for(int i = 1; i <= n; i++){
+                        fact *= i;
+                        System.out.println(fact);
+                    }
+                    break;
+                }
+                System.out.println("Out of range.");
+            } catch (InputMismatchException e) {
+                System.out.println("You did not enter a Integer!");
+                in.nextLine(); //needed to clear buff
+            }
+        }
+        System.out.println("You entered: " + n);
+
     }
 }
