@@ -4,10 +4,10 @@ public class textAdventure {
     public static void main(String[] args) {
     // System objects
     Scanner in = new Scanner(System.in);
-    Random rand = new Random();
+    Random rand = new Random(); //randomize
 
     //Game variables
-     String() enemies = { "Skeleton", "Zombie", "Warrior", "Assassin" }; // type of enemies
+     String[] enemies = { "Skeleton", "Zombie", "Warrior", "Assassin" }; // type of enemies
      int maxEnemyHealth = 75; //enemy starting health
      int enemyAttackDamage = 25; // enemy attack damage
 
@@ -21,11 +21,29 @@ public class textAdventure {
 
       boolean running = true;
 
-      System.out.println("Welcome to the Dungeon!");
+      System.out.println("\t\t\t\tWelcome to the Dungeon!");
 
       GAME:
       while (running) {
-          System.out.println("----------------------------------------------------------------");
+          System.out.println("------------------------------------------------------");
+
+          int enemyHealth = rand.nextInt(maxEnemyHealth); // random starting enemy health between 0 = 75
+          String enemy = enemies[rand.nextInt(enemies.length)];//pull random enemy from the length of enemies array
+
+          System.out.println("\t# " + enemy + " appeared! #\n");// #\n is line break
+          //            # skeleton has appeared!   # example
+          while(enemyHealth > 0) { // iteration of attacks/player options
+              System.out.println("\tYour HP:" + health); //player health
+              System.out.println("\t" + enemy +"'s HP:" + enemyHealth); //e health
+              System.out.println("\n\tWhat would you like to do?");
+              System.out.println("\t1 Attack");
+              System.out.println("\t2 Drink health potion");
+              System.out.println("\t3 Run!"); //player options
+              System.out.println("\tHint: Your starting HP is full");
+
+              String input = in.nextLine(); //grabs next line from console/ user input
+          }
+
 
       }
 
