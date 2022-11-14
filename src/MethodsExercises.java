@@ -6,8 +6,8 @@ import java.util.InputMismatchException;
 public class MethodsExercises {
     public static void main(String[] args) {
         // question 1
-       int result = 0;
-       // adds two numbers
+        int result = 0;
+        // adds two numbers
         result = 10 + 15;
         System.out.println("10 + 15 = " + result);
 
@@ -27,7 +27,7 @@ public class MethodsExercises {
 
         Scanner in = new Scanner(System.in);
         int number = 0;
-        while(true) {
+        while (true) {
             try {
                 System.out.println("Enter a number between 1 and 10: ");
                 number = in.nextInt();
@@ -40,6 +40,15 @@ public class MethodsExercises {
                 in.nextLine(); //needed to clear buff
             }
         }
-       System.out.println("You entered: " + number);
+        System.out.println("You entered: " + number);
+
+        // question 3
+      System.out.println("Enter an Integer: ");
+      int num = in.nextInt();
+      int factorial = 1;
+      for(int i = 1; i <= num; i++){
+          factorial = factorial*i;
+      }
+      System.out.println("Factorial of the Number: " + factorial);
     }
 }
