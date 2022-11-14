@@ -1,9 +1,11 @@
 import java.util.Scanner;
 import java.lang.Math;
 import java.util.Random;
+import java.util.InputMismatchException;
 
 public class MethodsExercises {
     public static void main(String[] args) {
+        // question 1
        int result = 0;
        // adds two numbers
         result = 10 + 15;
@@ -20,5 +22,24 @@ public class MethodsExercises {
         // divide 10, 15 by 5
         result = 10 + 15 / 5;
         System.out.println("10 + 15 / 5 = " + result);
+
+        // question two
+
+        Scanner in = new Scanner(System.in);
+        int number = 0;
+        while(true) {
+            try {
+                System.out.println("Enter a number between 1 and 10: ");
+                number = in.nextInt();
+                if (number >= 1 && number <= 10) {
+                    break;
+                }
+                System.out.println("Out of range.");
+            } catch (InputMismatchException e) {
+                System.out.println("You did not enter a Integer!");
+                in.nextLine(); //needed to clear buff
+            }
+        }
+       System.out.println("You entered: " + number);
     }
 }
