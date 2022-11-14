@@ -119,8 +119,8 @@ public class textAdventure {
               break; // break the loop if they exit
           }
       }
-        System.out.println("#######################");
-        System.out.println("# THANKS FOR PLAYING! #");
-        System.out.println("#######################");
+        System.out.println("###################################################################");
+        System.out.println("# Thank you for playing, your number of attempts: " + attempt + " #");
+        System.out.println("###################################################################");
     }
 }
