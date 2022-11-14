@@ -33,8 +33,8 @@ public class textAdventure {
           System.out.println("\t# " + enemy + " appeared! #\n");// #\n is line break
           //            # skeleton has appeared!   # example
           while(enemyHealth > 0) { // iteration of attacks/player options
-              System.out.println("\tYour HP:" + health); //player health
-              System.out.println("\t" + enemy +"'s HP:" + enemyHealth); //e health
+              System.out.println("\tYour HP: " + health); //player health
+              System.out.println("\t" + enemy +"'s HP: " + enemyHealth); //e health
               System.out.println("\n\tWhat would you like to do?");
               System.out.println("\t1 Attack");
               System.out.println("\t2 Drink health potion");
@@ -63,8 +63,8 @@ public class textAdventure {
                       health += healthPotionHealAmoutn;
                       numHealthPotions--;
                       System.out.println("\t > You drink a health potion, healing yourself for " +
-                              healthPotionHealAmoutn + ". " + "\n\t> You now have" + health + "HP"
-                              + "\n\t> You have" + numHealthPotions + " health potions left.\n");// health potion output
+                              healthPotionHealAmoutn + ". " + "\n\t> You now have " + health + " HP"
+                              + "\n\t> You have " + numHealthPotions + " health potions left.\n");// health potion output
                   }
                   // system out print when the user runs out of potions
                   else {
@@ -95,7 +95,23 @@ public class textAdventure {
 
               numHealthPotions++;
               System.out.println(" # The " + enemy + " dropped a health potion! #");
+              System.out.println(" # You now have " + numHealthPotions + " health potions. # ");
+          }
+          System.out.println("------------------------------------------------------");
+          System.out.println("What would you like to do now?");
+          System.out.println("1: Continue fighting");
+          System.out.println("2: Exit dungeon");
 
+          String input = in.nextLine();
+            //new while loop for new player options 1. continue or 2. exit
+           // going to keep running question until user types proper input value
+          while(!input.equals("1") && !input.equals("2")) {
+              System.out.println("Invalid command");
+              input = in.nextLine();
+          }
+          // what to do when they wish to continue
+          if (input.equals("1")){
+              System.out.println();
           }
       }
     }
