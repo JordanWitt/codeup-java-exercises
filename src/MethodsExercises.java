@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 
 public class MethodsExercises {
     public static void main(String[] args) {
-        // question 1
+//         question 1
         int result = 0;
         // adds two numbers
         result = 10 + 15;
@@ -59,7 +59,7 @@ public class MethodsExercises {
                 n = in.nextInt();
                 if (n >= 1 && n <= 10) {
                     int fact = 1;
-                    for(int i = 1; i <= n; i++){
+                    for (int i = 1; i <= n; i++) {
                         fact *= i;
                         System.out.println(fact);
                     }
@@ -67,11 +67,50 @@ public class MethodsExercises {
                 }
                 System.out.println("Out of range.");
             } catch (InputMismatchException e) {
-                System.out.println("You did not enter a Integer!");
+                System.out.println("You did not enter a Number!");
                 in.nextLine(); //needed to clear buff
             }
         }
         System.out.println("You entered: " + n);
 
+        // question 4
+        Scanner scanner = new Scanner(System.in);
+        int attempt = 1;
+        int dice1 = (int) (Math.random() * 6 + 1);
+        int dice2 = (int) (Math.random() * 6 + 1);
+        int sum = dice1 + dice2;
+
+        while (true) {
+            System.out.println();
+            System.out.println("Rolling the dice " + attempt + " time(s)!");
+
+            dice1 = (int) (Math.random() * 6 + 1);
+            dice2 = (int) (Math.random() * 6 + 1);
+            sum = dice1 + dice2;
+
+            System.out.println("Roll: total = " + sum);
+
+            if (sum == 2 || sum == 3 || sum == 12) {
+                System.out.println("###### Sorry with a " + sum + " you loose! ######");
+                System.out.println();
+                break;
+            } else if (sum == 7 || sum == 11) {
+                System.out.println("###### With a " + sum + " you win! ######");
+                System.out.println();
+                break;
+            }
+            System.out.println();
+            System.out.println("Do you wish to continue? Press 'y' for YES or ANY key for EXIT");
+            if (!scanner.next().equalsIgnoreCase("y")) {
+                break;
+            }
+            attempt++;
+        }
+        System.out.println("Thanks for playing dice game, you rolled the dice " + attempt + " times!");
     }
 }
+
+
+
+
+

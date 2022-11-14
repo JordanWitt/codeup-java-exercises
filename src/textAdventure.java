@@ -12,7 +12,7 @@ public class textAdventure {
      int enemyAttackDamage = 25; // enemy attack damage
 
      //Player variables
-
+      int attempt = 1;
       int health = 100; //player starting health
       int attackDamage = 50; //player attack damage
       int numHealthPotions = 3; //amount of health potions
@@ -112,6 +112,7 @@ public class textAdventure {
           // what to do when they wish to continue
           if (input.equals("1")){
               System.out.println("You continue on your adventure!");
+              attempt++;
           }
           else if (input.equals("2")){
               System.out.println("You exit the dungeon from your adventure, sweet victory");
