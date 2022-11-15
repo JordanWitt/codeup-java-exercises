@@ -14,8 +14,8 @@ public class ArrayExercises {
 
         int[] myArr2 = new int[two]; //combined into one line //space for 2 elements
 
-       String[] foods = {"pie ", "burger ", "pizza ", "taco"};
-       System.out.println(foods[0]);
+        String[] foods = {"pie ", "burger ", "pizza ", "taco"};
+        System.out.println(foods[0]);
 //      for loop example to display the whole array
 
 //               for(int i = 0; i < food.length; i++){
@@ -23,7 +23,7 @@ public class ArrayExercises {
 //               }
 
         //broken down for each without using for loop.
-        for(String food : foods) {
+        for (String food : foods) {
             System.out.println(food);
 
         }
@@ -40,14 +40,14 @@ public class ArrayExercises {
         // filling in my favorite number of "8" 10 times
         int[] favoriteNumber10xs = new int[10];
         Arrays.fill(favoriteNumber10xs, 8);
-        for(int num : favoriteNumber10xs){
+        for (int num : favoriteNumber10xs) {
             System.out.println(num);
         }
- System.out.println("SPACE");
+        System.out.println("SPACE");
 
         //Arrays.equals
         int[] favoriteNumber10xsAgain = Arrays.copyOf(favoriteNumber10xs, 10);// if the 10(amount) changes ut becomes false
-        for(int i : favoriteNumber10xsAgain){
+        for (int i : favoriteNumber10xsAgain) {
             System.out.println(i);
         }
         System.out.println(Arrays.equals(favoriteNumber10xs, favoriteNumber10xsAgain));
@@ -56,5 +56,34 @@ public class ArrayExercises {
 
         Arrays.sort(foods);
         System.out.println(Arrays.toString(foods));
+
+        //Arrays in arrays || matrix/matrices // 2d arrays []
+
+        int [][] myMatrix = {
+                {1, 2, 3},
+                {5, 5, 6},
+                {7, 8, 9}
+        };
+        System.out.println((Arrays.toString(myMatrix)));
+        for(int[] matrix : myMatrix){
+            System.out.println(Arrays.toString(matrix));
+        }
+        // grabbing a single number by index from the list of arrays
+
+        System.out.println(myMatrix[1][2]);
+        int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+        for (int[] row : matrix) {
+            System.out.println("+---+---+---+");
+            System.out.print("| ");
+            for (int n : row) {
+                System.out.print(n + " | ");
+            }
+            System.out.println();
+        }
+        System.out.println("+---+---+---+");
     }
 }
