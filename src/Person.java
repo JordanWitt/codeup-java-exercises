@@ -70,13 +70,15 @@ class Podracers {
        this.pod = pod;
     }
     public void introduction(){
-       System.out.println("That's absolutely right. And a big turnout here, from all corners of the Outer Rim territories.\nI see the contestants are making their way out onto the starting grid. \nHere we have " + getName() + " " + "in their " + getPod() + " Going to be a touch one to beat!");
+       System.out.println("That's absolutely right. And a big turnout here, from all corners of the Outer Rim territories.\nI see the contestants are making their way out onto the starting grid. \nHere we have " + getName() + " " + "in their " + getPod() + " Going to be a tough one to beat!");
     }
     public static void main(String[]args){
        Podracers podracers = new Podracers("Anakin Skywalker", "\n" +
-               "Repulsorcraft with the Radon-Ulzer 620c turbines");
+               "Repulsorcraft with the Radon-Ulzer 620c turbines.");
        System.out.println(podracers.getName() + podracers.getPod());
+       System.out.println("--------------------------------------");
        podracers.introduction();
+       System.out.println("--------------------------------------");
        Podracers podracers1 = new Podracers("Anakin Skywalker", "Radon-Ulzer 620c turbines");
        podracers1.setName("Sebulba");
        podracers1.setPod("Repulsorcraft with the Collor Pondrat Plug-F Mammoth Split-X engines.");
@@ -126,10 +128,13 @@ class lotr{
     }
     public static void main(String[]args){
         lotr lotr = new lotr("Bilbo", 111,"Hobbiton", "Pipe Smoking");
-        System.out.println(lotr.getName()+ lotr.getAge() + lotr.getLocation() + lotr.getInterests());
+        System.out.println(lotr.getName() + " " + lotr.getAge() + " " + lotr.getLocation() + " " + lotr.getInterests());
+        System.out.println("---------------------------------------------------------------------------------------------------------");
         lotr.introduction();
+        System.out.println("---------------------------------------------------------------------------------------------------------");
         lotr lotr1 = new lotr("Frodo", 50, "Hobbiton", "adventures");
         lotr1.introduction();
+        System.out.println("---------------------------------------------------------------------------------------------------------");
         lotr lotr2 = new lotr("Bilbo", 111,"Hobbiton", "Pipe Smoking");
         lotr2.setName("Sam");
         lotr2.setAge(48);
