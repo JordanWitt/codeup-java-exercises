@@ -142,5 +142,4 @@ class lotr{
         lotr2.setInterests("caretaking");
         lotr2.introduction();
     }
-
 }
