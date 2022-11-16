@@ -9,4 +9,14 @@ public class Input {
         System.out.println("Enter some String: ");
         return scanner.nextLine();
     }
+    public boolean yesNo() {
+        System.out.println("Enter yes or no: ");
+        String input = scanner.next();
+        if(input.equalsIgnoreCase("Yes") || input.equalsIgnoreCase("y")){
+            System.out.println("You entered yes: ");
+            return true;
+        }
+        System.out.println("You entered no: ");
+        return false;
+    }
 }
