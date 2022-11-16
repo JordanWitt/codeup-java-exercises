@@ -125,7 +125,7 @@ class lotr{
         System.out.println("Here we have " + getName() + ", they are at the ripe age of " + getAge() + ". "  + getName() +   " happily resides in " + getLocation() + " and enjoys " + getInterests() + ".");
     }
     public static void main(String[]args){
-        lotr lotr = new lotr("Bilbo ", 111," Hobbiton ", "Pipe Smoking");
+        lotr lotr = new lotr("Bilbo", 111,"Hobbiton", "Pipe Smoking");
         System.out.println(lotr.getName()+ lotr.getAge() + lotr.getLocation() + lotr.getInterests());
         lotr.introduction();
         lotr lotr1 = new lotr("Frodo", 50, "Hobbiton", "adventures");
