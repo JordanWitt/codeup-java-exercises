@@ -2,6 +2,8 @@ import java.util.Arrays;
 
 public class ClassExamples {
     public static void main(String[] args) {
+        //START OF CLASS EXAMPLES
+        //array had precise length property, might have limited space in memory, needs to allocate/prep when specified
         final int four = 4; // const of four
         int two = 2;
         // have to declare type and size
