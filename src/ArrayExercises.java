@@ -10,14 +10,13 @@ public class ArrayExercises {
         }
         System.out.println("-------NEW ARRAY-------");
 
-            String[] newPeoples = Arrays.copyOf(peoples, peoples.length + 1); // creating a new copy plus one to add
-            newPeoples[peoples.length] = "Han Solo";
+            String[] newPeoples = Arrays.copyOf(peoples, peoples.length + 1);
+            // creating a new copy plus one to add
+            newPeoples[peoples.length] = "Han Solo, " + "\n" + "Boba";
             for(String pepe : newPeoples){
                 System.out.println(pepe);
             }
             System.out.println(Arrays.toString(newPeoples));
-
-            //QUESTION 2
         }
     }
 
