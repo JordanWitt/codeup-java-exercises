@@ -6,7 +6,7 @@ public class Input {
     private final Scanner scanner = new Scanner(System.in);
     //STRING INPUT
     public String getString(){
-        System.out.println("Enter some String: ");
+        System.out.println("Enter something: ");
         return scanner.nextLine();
     }
     //BOOLEAN Y/N

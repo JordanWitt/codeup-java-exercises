@@ -29,23 +29,27 @@ public class textAdventure2 {
             System.out.println("Oh no! " + homework + " is here!");
             while (homeworkHealth > 0){
                 System.out.println("Your current knowledge " + knowledge + "!");
-                System.out.println(homework + " homework difficulty " +homeworkHealth);
+                System.out.println(homework + " homework difficulty " + "is at " + homeworkHealth);
+                System.out.println("-------------------------------------------");
+
                 System.out.println("What would you like to do?");
                 System.out.println("1. ATTACK with more studying");
                 System.out.println("2. Practice for better results");
                 System.out.println("3. Leave it all behind, this is not my battle");
-
+                System.out.println("-------------------------------------------");
                 String input = in.nextLine();
                 if(input.equals("1")){
                     int knowledgeLearned = rand.nextInt(attackDamage);
                     int knowledgeMisunderstood = rand.nextInt(whatIDontKnow);
 
-                    System.out.println("You have gained " + knowledgeLearned + "!");
-                    System.out.println("Brain is becoming cloudy with " + knowledgeMisunderstood + " misunderstandings");
+                    System.out.println("You have gained " + knowledgeLearned + " knowledge!");
+                    System.out.println("But now your brain is becoming cloudy with even more " + knowledgeMisunderstood + " misunderstandings");
+                    System.out.println("-------------------------------------------");
 
                     knowledge -= knowledgeMisunderstood;
                     homeworkHealth -= knowledgeLearned;
 
+                    System.out.println("You studied your butt off " + homework + " is less frightening " + " you've gained " + knowledge + " in knowledge!");
                 }
             }
         }
