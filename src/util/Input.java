@@ -12,15 +12,15 @@ public class Input {
 
     //BOOLEAN Y/N
     public boolean yesNo() {
-        System.out.println("Enter yes or no: ");
+        System.out.println("Enter yes or no to continue: ");
         String input = scanner.nextLine();
         if (input.equalsIgnoreCase("Yes") || input.equalsIgnoreCase("y")) {
-            System.out.println("You entered: " + input);
+            System.out.println("You entered: ");
             return true;
-        }
-        return false;
+        } else if (input.equalsIgnoreCase("No") || input.equalsIgnoreCase("n")) {
+           System.out.println("You entered: ");
+        }return false;
     }
-
 
     //MAX MIN INT
     public int getInt(int min, int max) {
