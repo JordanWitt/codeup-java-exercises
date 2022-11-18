@@ -14,20 +14,13 @@ public class Input {
     public boolean yesNo() {
         System.out.println("Enter yes or no: ");
         String input = scanner.nextLine();
-        while (!input.equalsIgnoreCase("Yes") && !input.equalsIgnoreCase("y") &&
-                !input.equalsIgnoreCase("No") && !input.equalsIgnoreCase("n")) {
-            System.out.println("Sorry, please enter a yes or no: ");
-            break;
-        }
         if (input.equalsIgnoreCase("Yes") || input.equalsIgnoreCase("y")) {
             System.out.println("You entered: " + input);
             return true;
-        } else if (input.equalsIgnoreCase("No") || input.equalsIgnoreCase("n")) {
-            System.out.println("You entered: " + input);
-            return false;
         }
         return false;
     }
+
 
     //MAX MIN INT
     public int getInt(int min, int max) {
