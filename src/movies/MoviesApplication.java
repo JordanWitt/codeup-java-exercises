@@ -1,22 +1,20 @@
 package movies;
 
 import util.Input;
-import java.util.Arrays;
-import java.util.Scanner;
 
+import java.util.Arrays;
 
 public class MoviesApplication {
     public static void main(String[] args) {
+
         int attempt = 0;
         Input movie = new Input();
         Movie[] allmovies = Arrays.copyOf(MoviesArray.findAll(), 100);//99 movies listed?
-//        boolean continues = input.yesNo();
         boolean running = true;
-
 
         System.out.println("-----------------------MOVIES-----------------------");
         System.out.println();
-
+        MOVIES:
         while (running) {
             System.out.println("\tWhat would you like to do?");
             System.out.println("\t0 - Exit");
@@ -56,11 +54,16 @@ public class MoviesApplication {
                     System.out.println("Comedies: ");
                     System.out.println(allmovies[i].getName());
                     System.out.println("--------------------");
-                    attempt ++;
-                }else {
+                    continue MOVIES;
+                } else {
+                    attempt++;
                     break;
                 }
             }
-        }System.out.println("See ya later!");
+            if (decisions == 0) {
+                break;
+            }
+        }
+        System.out.println("See ya later! Here's how many times you viewed our Movies: " + attempt);
     }
 }
