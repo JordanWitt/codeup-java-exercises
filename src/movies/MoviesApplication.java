@@ -9,7 +9,7 @@ public class MoviesApplication {
 
         int attempt = 0;
         Input movie = new Input();
-        Movie[] allmovies = Arrays.copyOf(MoviesArray.findAll(), 100);//99 movies listed?
+        Movie[] movieList = Arrays.copyOf(MoviesArray.findAll(), 100);//99 movies listed?
         boolean running = true;
 
         System.out.println("-----------------------MOVIES-----------------------");
@@ -26,33 +26,33 @@ public class MoviesApplication {
             System.out.println("\t6 - view movies in musical category");
             System.out.println("\t7 - view movies in comedy category");
             int decisions = movie.getInt();
-            for (int i = 0; i < allmovies.length; i++) {
+            for (int i = 0; i < movieList.length; i++) {
                 if (decisions == 1) {
-                    System.out.println(allmovies[i].getName());
+                    System.out.println(movieList[i].getName());
                     System.out.println("--------------------");
-                } else if (decisions == 2 && allmovies[i].getCategory().equals("animated")) {
+                } else if (decisions == 2 && movieList[i].getCategory().equals("animated")) {
                     System.out.println("Animations: ");
-                    System.out.println(allmovies[i].getName());
+                    System.out.println(movieList[i].getName());
                     System.out.println("--------------------");
-                } else if (decisions == 3 && allmovies[i].getCategory().equals("drama")) {
+                } else if (decisions == 3 && movieList[i].getCategory().equals("drama")) {
                     System.out.println("Dramas: ");
-                    System.out.println(allmovies[i].getName());
+                    System.out.println(movieList[i].getName());
                     System.out.println("--------------------");
-                } else if (decisions == 4 && allmovies[i].getCategory().equals("horror")) {
+                } else if (decisions == 4 && movieList[i].getCategory().equals("horror")) {
                     System.out.println("Horror: ");
-                    System.out.println(allmovies[i].getName());
+                    System.out.println(movieList[i].getName());
                     System.out.println("--------------------");
-                } else if (decisions == 5 && allmovies[i].getCategory().equals("scifi")) {
+                } else if (decisions == 5 && movieList[i].getCategory().equals("scifi")) {
                     System.out.println("Sci-Fi: ");
-                    System.out.println(allmovies[i].getName());
+                    System.out.println(movieList[i].getName());
                     System.out.println("--------------------");
-                } else if (decisions == 6 && allmovies[i].getCategory().equals("musical")) {
+                } else if (decisions == 6 && movieList[i].getCategory().equals("musical")) {
                     System.out.println("Musicals: ");
-                    System.out.println(allmovies[i].getName());
+                    System.out.println(movieList[i].getName());
                     System.out.println("--------------------");
-                } else if (decisions == 7 && allmovies[i].getCategory().equals("comedy")) {
+                } else if (decisions == 7 && movieList[i].getCategory().equals("comedy")) {
                     System.out.println("Comedies: ");
-                    System.out.println(allmovies[i].getName());
+                    System.out.println(movieList[i].getName());
                     System.out.println("--------------------");
                     continue MOVIES;
                 } else {

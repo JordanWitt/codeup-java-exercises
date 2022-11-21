@@ -15,9 +15,9 @@ public class CircleApp {
         CIRCLEGAME:
         while (running) {
             while (runthroughs > 1) {
-                if (goAgain == false) {
+                if (!goAgain) {
                     break;
-                } else if (goAgain == true) {
+                } else if (goAgain) {
                     runthroughs--;
                     System.out.println("You have " + runthroughs + " more circles to make");
                     double getCircleInfo = input.getDouble();
