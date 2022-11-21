@@ -1,9 +1,5 @@
 package shapes;
-import java.util.Scanner;
-import util.Input;
 public class Rectangle {
-    Scanner in = new Scanner(System.in);
-    Input input = new Input();
     protected int length;
     protected int width;
 
