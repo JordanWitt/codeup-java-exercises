@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+import shapes.Measurable;
 import shapes.Rectangle;
 import shapes.Square;
 public class ShapesTest {
@@ -23,5 +25,13 @@ public class ShapesTest {
 
         System.out.println(square.getPerimeter());
         System.out.println(square.getArea());
+
+        Measurable myShape =  new Rectangle(9,7);
+        Measurable myShape2 = new Square(5);
+        System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape2.getArea());
+        System.out.println(myShape2.getPerimeter());
+
     }
 }
