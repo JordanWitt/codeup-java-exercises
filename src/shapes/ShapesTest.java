@@ -1,8 +1,4 @@
-import java.util.Scanner;
-
-import shapes.Measurable;
-import shapes.Rectangle;
-import shapes.Square;
+package shapes;
 public class ShapesTest {
     public static void main(String[]args){
         Rectangle rectangle = new Rectangle(3,7);
