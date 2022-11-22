@@ -48,6 +48,7 @@ public class GradesApplication {
         System.out.println("\tBofur11d");
         System.out.println("\tKili09d");
         System.out.println("\tFili08D");
+        System.out.println("\t6. View all");
         System.out.println("\t5. Opt Out");
         label:
         while(running) {
@@ -66,6 +67,10 @@ public class GradesApplication {
                 case "Fili08D":
                     System.out.println("Username: Fili08D, " + "Name: " + Fili.getName() + ", Grade Average:  " + Fili.getGradeAverage());
                     break;
+                case "6":
+                    Students.forEach((s, student) -> {
+                        System.out.println(s + ", " + student.getName() + ", " + student.getGradeAverage());
+                    });
                 default:
                     System.out.println("Exiting Dwarves");
                     break label;
