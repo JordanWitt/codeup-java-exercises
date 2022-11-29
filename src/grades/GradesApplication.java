@@ -50,6 +50,7 @@ public class GradesApplication {
         System.out.println("\tFili08D");
         System.out.println("\t6. View all");
         System.out.println("\t5. Opt Out");
+
         label:
         while(running) {
             Scanner in = new Scanner(System.in);
