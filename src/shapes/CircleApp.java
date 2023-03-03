@@ -29,6 +29,7 @@ public class CircleApp {
                         System.out.println("Thanks for playing");
                         System.out.println("here's the number of circles made: " + attempt);
                         System.out.println("Press play to restart");
+                        continue CIRCLEGAME;
                     }else{
                         break;
                     }

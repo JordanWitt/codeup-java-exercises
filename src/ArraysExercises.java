@@ -1,7 +1,6 @@
-import java.net.SocketOption;
 import java.util.Arrays;
-import java.util.Random;
-public class ArrayExercises {
+
+public class ArraysExercises {
     public static void main(String[] args) {
         //QUESTION 1
         String[] peoples = {"Jordan ", "Anakin ", "Obi K ", "Padme "};
